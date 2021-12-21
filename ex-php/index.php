@@ -29,8 +29,9 @@ require_once __DIR__ . '/partials/scripts/database.php';
     <h4><?php echo $element['author'];?></h4>
     <h4><?php echo $element['year'];?></h4>
     <h4><?php echo $element['genre'];?></h4>
-    <?php } ?>
     </li>
+    <?php } ?>
+    
 </ul>
 </div>
 
