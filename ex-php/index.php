@@ -2,7 +2,7 @@
 - Solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. Teniamo i dati dei dischi in un file separato.-->
 
 <?php //DATABASE
-require_once __DIR__ . '/partials/database.php';
+require_once __DIR__ . '/partials/scripts/database.php';
 ?>
 
 <!DOCTYPE html>
