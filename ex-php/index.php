@@ -12,16 +12,29 @@ require_once __DIR__ . '/partials/scripts/database.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<?php //HEADER
+ include_once __DIR__ . '/partials/templates/header.php'; ?>
 
-<?php foreach($database as $element){?>
+<main>
+
+<div class="container">
+<ul>
+    <?php foreach($database as $element){?>
+    <li>
+    <img class="poster" src="<?php echo $element['poster'];?>" alt="<?php echo $element['title'];?>">
     <h4><?php echo $element['title'];?></h4>
     <h4><?php echo $element['author'];?></h4>
     <h4><?php echo $element['year'];?></h4>
-    <img src="<?php echo $element['poster'];?>" alt="">
     <h4><?php echo $element['genre'];?></h4>
-<?php } ?>
+    <?php } ?>
+    </li>
+</ul>
+</div>
+
+</main>
 
 </body>
 </html>
